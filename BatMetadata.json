@@ -1,0 +1,17 @@
+{
+  "context_accounts": [],
+  "entry_points": [],
+  "function_dependencies": [],
+  "initialized": false,
+  "miro": {
+    "code_overhaul": []
+  },
+  "project_name": "mmm-audit",
+  "source_code": {
+    "enums_source_code": [],
+    "functions_source_code": [],
+    "structs_source_code": [],
+    "traits_source_code": []
+  },
+  "traits": []
+}

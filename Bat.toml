@@ -1,0 +1,10 @@
+initialized = true
+project_name = 'mmm-audit'
+client_name = 'Magic eden'
+commit_hash_url = 'https://github.com/magicoss/mmm/commit/3e15732061ad03256b2570b78ff8018ba74ce039'
+starting_date = '19/02/2024'
+miro_board_url = 'https://miro.com/app/board/uXjVNrXUjBs=/'
+auditor_names = ['matias']
+program_lib_path = '../mmm/programs/mmm/src/lib.rs'
+program_name = 'mmm'
+project_repository_url = 'https://github.com/matias-halborn/magic_eden_mmm'
