@@ -7909,15 +7909,28 @@
   "miro": {
     "code_overhaul": [
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764579679013486",
+        "entry_point_image_id": "3458764579679013391",
         "entry_point_name": "create_pool",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764579679013360",
+        "images_deployed": true,
         "metadata_id": "INXqw98cSUEorH4QbLWPQyKNfcL52w",
         "miro_frame_id": "3458764579678624909",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Not validated signer:<br> <strong>owner</strong>",
+            "signer_type": "NotValidated",
+            "sticky_note_id": "3458764579679013240",
+            "user_figure_id": "3458764579679013260"
+          },
+          {
+            "signer_text": "Not validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "NotValidated",
+            "sticky_note_id": "3458764579679013287",
+            "user_figure_id": "3458764579679013317"
+          }
+        ],
+        "validations_image_id": "3458764579679013420"
       },
       {
         "context_accounts_image_id": "",

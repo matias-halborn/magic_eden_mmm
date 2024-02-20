@@ -76,6 +76,11 @@
     pub pool: Box<Account<'info, Pool>>,
 ```
 
+```rust
+    check_allowlists(&args.allowlists)?;
+    check_curve(args.curve_type, args.curve_delta)?;
+```
+
 # Miro frame url:
 
 COMPLETE_WITH_MIRO_FRAME_URL
