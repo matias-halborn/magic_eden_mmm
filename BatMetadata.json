@@ -7907,7 +7907,228 @@
   ],
   "initialized": true,
   "miro": {
-    "code_overhaul": []
+    "code_overhaul": [
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "create_pool",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "INXqw98cSUEorH4QbLWPQyKNfcL52w",
+        "miro_frame_id": "3458764579678624909",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "update_pool",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "rU7liCyFtPM5l6qG2LSPdxB4Jjw5Li",
+        "miro_frame_id": "3458764579678839939",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "update_allowlists",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "hFcwF9rctOcOA1mgoOI6No2iDGUPbb",
+        "miro_frame_id": "3458764579678839986",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_close_pool",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "0UK6GSLIGUhGvMTjPL1PHQHkCjbd35",
+        "miro_frame_id": "3458764579678840018",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_deposit_buy",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "ovtreNVakZemG0TrJwytP9gxUklnsm",
+        "miro_frame_id": "3458764579678840039",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_withdraw_buy",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "dvOQnU2mv75RNJ3PIZHHIGP2Lxn3AK",
+        "miro_frame_id": "3458764579678840083",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_fulfill_buy",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "0KfHRLBu8glKsdOdoAACVkfjhQVIzG",
+        "miro_frame_id": "3458764579678840126",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_fulfill_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "Lu809oLh82JKgYnvoI6KITyBTbHWYt",
+        "miro_frame_id": "3458764579678840190",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "withdraw_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "OdTvsJKrfk8nSStBjf4QIEA853PzbL",
+        "miro_frame_id": "3458764579678840226",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "deposit_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "V2j7OCY7bk6AAewxyTeSdQAJt2ckEG",
+        "miro_frame_id": "3458764579678840266",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "ocp_deposit_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "bgZv6k9a1yeY5F92zITl8YtRVcmbIu",
+        "miro_frame_id": "3458764579678840412",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_ocp_fulfill_buy",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "AfCX804PHEf1cEIMVtGO5EGF3Ln8PA",
+        "miro_frame_id": "3458764579678840467",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_ocp_fulfill_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "P5cYl31JuSFIj8pNTmknZ6mYnTOGFM",
+        "miro_frame_id": "3458764579678840512",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "ocp_withdraw_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "b9IutcRQVYMspU6ZyINXaX5ttKjMJE",
+        "miro_frame_id": "3458764579678840576",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "mip1_deposit_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "LplunkLdgqS8hwlSmWpZ62IC4nWhMJ",
+        "miro_frame_id": "3458764579678840621",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "mip1_withdraw_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "inBnuC9OMWC9I7HIV7nFP9b6kXcrdI",
+        "miro_frame_id": "3458764579678840659",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_mip1_fulfill_sell",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "eFC1W6cLoMMZ1hFi4qfxFNGktHzLrL",
+        "miro_frame_id": "3458764579678840679",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "sol_mip1_fulfill_buy",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "4ZaAOg5dTp8SwtgKHavuClHoXJZ3zX",
+        "miro_frame_id": "3458764579678840690",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "close_if_balance_invalid",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "CkZQrsbP4KCRA36kU9jT9MzI6FC4Yt",
+        "miro_frame_id": "3458764579678840699",
+        "signers": [],
+        "validations_image_id": ""
+      },
+      {
+        "context_accounts_image_id": "",
+        "entry_point_image_id": "",
+        "entry_point_name": "set_shared_escrow",
+        "handler_image_id": "",
+        "images_deployed": false,
+        "metadata_id": "20wVAKtbAtnXSCRoze1H2iAPFZTpzS",
+        "miro_frame_id": "3458764579678840716",
+        "signers": [],
+        "validations_image_id": ""
+      }
+    ]
   },
   "project_name": "mmm-audit",
   "source_code": {
