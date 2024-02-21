@@ -11,31 +11,21 @@
 	- `pool.referral`[Pubkey]
 	- `pool.referral_bp`[u16, // deprecated]
 	- `pool.buyside_creator_royalty_bp`[u16]
-	- `pool.sellside_asset_amount`[u64]
-	- `pool.lp_fee_earned`[u64]
-	- `pool.owner`[Pubkey]
-	- `pool.cosigner`[Pubkey]
-	- `pool.uuid`[Pubkey, // randomly generated keypair]
-	- `pool.payment_mint`[Pubkey]
-	- `pool.buyside_payment_amount`[u64]
-	- `pool.shared_escrow_account`[Pubkey, // this points to the shared escrow account PDA (usually M2)]
-- `COMPLETE_WITH_THE_REST_OF_STATE_CHANGES`
 
 # Notes:
 
 - [ ] check validations:
-  - [ ] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L28)
-  - [ ] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L29)
-  - [ ] [constraint = args.lp_fee_bp <= MAX_LP_FEE_BP @ MMMErrorCode::InvalidBP](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L30)
-  - [ ] [constraint = args.buyside_creator_royalty_bp <= 10000 @ MMMErrorCode::InvalidBP](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L31)
-  - [ ] [constraint = args.spot_price > 0 @ MMMErrorCode::InvalidSpotPrice](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L32)
+  - [x] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L28)
+  - [x] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L29)
+  - [x] [constraint = args.lp_fee_bp <= MAX_LP_FEE_BP @ MMMErrorCode::InvalidBP](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L30)
+  - [x] [constraint = args.buyside_creator_royalty_bp <= 10000 @ MMMErrorCode::InvalidBP](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L31)
+  - [x] [constraint = args.spot_price > 0 @ MMMErrorCode::InvalidSpotPrice](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L32)
   - [ ] [constraint = args.referral.ne(owner.key) @ MMMErrorCode::InvalidReferral](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/update_pool.rs#L33)
-- COMPLETE_WITH_NOTES
 
 # Signers:
 
-- owner: COMPLETE_WITH_SIGNER_DESCRIPTION
-- cosigner: COMPLETE_WITH_SIGNER_DESCRIPTION
+- owner: owner of the `Pool` account
+- cosigner: cosigner of the `Pool` account
 
 # Handler function parameters:
 
@@ -87,7 +77,11 @@
     pub pool: Box<Account<'info, Pool>>,
 ```
 
+```rust
+  check_curve(args.curve_type, args.curve_delta)?;
+```
+
 # Miro frame url:
 
-COMPLETE_WITH_MIRO_FRAME_URL
+https://miro.com/app/board/uXjVNrXUjBs=/?moveToWidget=3458764579678839939
             
