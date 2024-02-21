@@ -7933,15 +7933,28 @@
         "validations_image_id": "3458764579679013420"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764579824588062",
+        "entry_point_image_id": "3458764579824587966",
         "entry_point_name": "update_pool",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764579824404927",
+        "images_deployed": true,
         "metadata_id": "rU7liCyFtPM5l6qG2LSPdxB4Jjw5Li",
         "miro_frame_id": "3458764579678839939",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>owner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579824404789",
+            "user_figure_id": "3458764579824404805"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579824404877",
+            "user_figure_id": "3458764579824404895"
+          }
+        ],
+        "validations_image_id": "3458764579824588010"
       },
       {
         "context_accounts_image_id": "",
