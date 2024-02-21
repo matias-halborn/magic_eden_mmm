@@ -1,7 +1,6 @@
 # State changes:
 
 - Initializes `pool`[Pool], funded by `owner`
-- `COMPLETE_WITH_THE_REST_OF_STATE_CHANGES`
 
 # Notes:
 
@@ -11,11 +10,10 @@
   - [ ] [constraint = args.spot_price > 0 @ MMMErrorCode::InvalidSpotPrice](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/create_pool.rs#L38)
   - [ ] [constraint = pool.payment_mint.eq(&Pubkey::default()) @ MMMErrorCode::InvalidPaymentMint](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/create_pool.rs#L39)
   - [ ] [constraint = args.referral.ne(owner.key) @ MMMErrorCode::InvalidReferral](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/create_pool.rs#L40)
-- COMPLETE_WITH_NOTES
 
 # Signers:
 
-- owner: COMPLETE_WITH_SIGNER_DESCRIPTION
+- owner: creator of the pool
 - cosigner: CHECK: the cosigner can be set as owner if you want optional cosigner
 
 # Handler function parameters:
@@ -83,5 +81,5 @@
 
 # Miro frame url:
 
-COMPLETE_WITH_MIRO_FRAME_URL
+https://miro.com/app/board/uXjVNrXUjBs=/?moveToWidget=3458764579678624909
             
