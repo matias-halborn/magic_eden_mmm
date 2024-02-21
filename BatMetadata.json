@@ -7957,15 +7957,22 @@
         "validations_image_id": "3458764579824588010"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764579829522597",
+        "entry_point_image_id": "3458764579829522486",
         "entry_point_name": "update_allowlists",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764579829522421",
+        "images_deployed": true,
         "metadata_id": "hFcwF9rctOcOA1mgoOI6No2iDGUPbb",
         "miro_frame_id": "3458764579678839986",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579829522371",
+            "user_figure_id": "3458764579829522391"
+          }
+        ],
+        "validations_image_id": "3458764579829522553"
       },
       {
         "context_accounts_image_id": "",
