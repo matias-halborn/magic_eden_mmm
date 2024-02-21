@@ -1,22 +1,23 @@
 # State changes:
 
 - Closes `pool`[Pool]. Rent exemption goes to `owner`
-- `COMPLETE_WITH_THE_REST_OF_STATE_CHANGES`
 
 # Notes:
 
 - [ ] check validations:
   - [ ] [constraint = pool.payment_mint.eq(&Pubkey::default()) @ MMMErrorCode::InvalidPaymentMint](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L11)
   - [ ] [constraint = pool.sellside_asset_amount == 0 @ MMMErrorCode::NotEmptySellsideAssetAmount](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L12)
-  - [ ] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L14)
-  - [ ] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L15)
+  - [x] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L14)
+  - [x] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L15)
   - [ ] [constraint = buyside_sol_escrow_account.lamports() == 0 @ MMMErrorCode::NotEmptyEscrowAccount](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/admin/sol_close_pool.rs#L22)
-- COMPLETE_WITH_NOTES
+- [ ] this function only closes the `pool` account, but the `buyside_sol_escrow_account` requires the lamports to be 0?
+- [ ] where is the `buyside_sol_escrow_account` account created?
+- [ ] why this function requires both the owner and the cosigner to be signers?
 
 # Signers:
 
-- owner: COMPLETE_WITH_SIGNER_DESCRIPTION
-- cosigner: COMPLETE_WITH_SIGNER_DESCRIPTION
+- owner: owner of the `Pool` account
+- cosigner: cosigner of the `Pool` account
 
 # Handler function parameters:
 
@@ -68,5 +69,5 @@ NO_HANDLER_FUNCTION_PARAMETERS_DETECTED
 
 # Miro frame url:
 
-COMPLETE_WITH_MIRO_FRAME_URL
+https://miro.com/app/board/uXjVNrXUjBs=/?moveToWidget=3458764579678840018
             
