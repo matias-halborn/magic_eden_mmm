@@ -7999,15 +7999,28 @@
         "validations_image_id": "3458764579831304931"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764579835128011",
+        "entry_point_image_id": "3458764579834974788",
         "entry_point_name": "sol_deposit_buy",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764579834974727",
+        "images_deployed": true,
         "metadata_id": "ovtreNVakZemG0TrJwytP9gxUklnsm",
         "miro_frame_id": "3458764579678840039",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>owner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579834974632",
+            "user_figure_id": "3458764579834974647"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579834974670",
+            "user_figure_id": "3458764579834974681"
+          }
+        ],
+        "validations_image_id": "3458764579835127995"
       },
       {
         "context_accounts_image_id": "",
