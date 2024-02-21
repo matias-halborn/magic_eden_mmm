@@ -7975,15 +7975,28 @@
         "validations_image_id": "3458764579829522553"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764579831305027",
+        "entry_point_image_id": "3458764579831160885",
         "entry_point_name": "sol_close_pool",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764579831160845",
+        "images_deployed": true,
         "metadata_id": "0UK6GSLIGUhGvMTjPL1PHQHkCjbd35",
         "miro_frame_id": "3458764579678840018",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>owner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579831160735",
+            "user_figure_id": "3458764579831160759"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764579831160771",
+            "user_figure_id": "3458764579831160828"
+          }
+        ],
+        "validations_image_id": "3458764579831304931"
       },
       {
         "context_accounts_image_id": "",
