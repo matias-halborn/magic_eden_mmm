@@ -8071,15 +8071,28 @@
         "validations_image_id": "3458764579940204713"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764580452070682",
+        "entry_point_image_id": "3458764580452070588",
         "entry_point_name": "sol_fulfill_sell",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764580452070536",
+        "images_deployed": true,
         "metadata_id": "Lu809oLh82JKgYnvoI6KITyBTbHWYt",
         "miro_frame_id": "3458764579678840190",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Not validated signer:<br> <strong>payer</strong>",
+            "signer_type": "NotValidated",
+            "sticky_note_id": "3458764580452070455",
+            "user_figure_id": "3458764580452070464"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580452070483",
+            "user_figure_id": "3458764580452070497"
+          }
+        ],
+        "validations_image_id": "3458764580452070622"
       },
       {
         "context_accounts_image_id": "",
