@@ -4650,7 +4650,7 @@
     {
       "context_accounts_id": "YiJKNsHfhqR0iy8qnHHzMMir4nE4rh",
       "entrypoint_function_id": "tYvKxxCI4yURYkhGnjS7B9SBOnvKBO",
-      "handler_id": "tylanoapQ1D17UlIFl2VABZB2qk7li",
+      "handler_id": "7znmQPiHDWTz8OKipUz7fdDApLFWmF",
       "metadata_id": "ixvopdzC1uyUAClkVS6cGfuEmrM6f8",
       "name": "withdraw_sell"
     }
@@ -8095,10 +8095,10 @@
         "validations_image_id": "3458764580452070622"
       },
       {
-        "context_accounts_image_id": "3458764580480234404",
-        "entry_point_image_id": "3458764580480234292",
+        "context_accounts_image_id": "3458764580481654609",
+        "entry_point_image_id": "3458764580481654395",
         "entry_point_name": "withdraw_sell",
-        "handler_image_id": "3458764580480234260",
+        "handler_image_id": "3458764580481654354",
         "images_deployed": true,
         "metadata_id": "OdTvsJKrfk8nSStBjf4QIEA853PzbL",
         "miro_frame_id": "3458764579678840226",
@@ -8106,17 +8106,17 @@
           {
             "signer_text": "Validated signer:<br> <strong>owner</strong>",
             "signer_type": "Validated",
-            "sticky_note_id": "3458764580480234182",
-            "user_figure_id": "3458764580480234199"
+            "sticky_note_id": "3458764580481654257",
+            "user_figure_id": "3458764580481654276"
           },
           {
             "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
             "signer_type": "Validated",
-            "sticky_note_id": "3458764580480234214",
-            "user_figure_id": "3458764580480234231"
+            "sticky_note_id": "3458764580481654287",
+            "user_figure_id": "3458764580481654306"
           }
         ],
-        "validations_image_id": "3458764580480234338"
+        "validations_image_id": "3458764580481654448"
       },
       {
         "context_accounts_image_id": "",
