@@ -8119,15 +8119,28 @@
         "validations_image_id": "3458764580481654448"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764580489710997",
+        "entry_point_image_id": "3458764580489710933",
         "entry_point_name": "deposit_sell",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764580489428897",
+        "images_deployed": true,
         "metadata_id": "V2j7OCY7bk6AAewxyTeSdQAJt2ckEG",
         "miro_frame_id": "3458764579678840266",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>owner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580489428777",
+            "user_figure_id": "3458764580489428802"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580489428820",
+            "user_figure_id": "3458764580489428836"
+          }
+        ],
+        "validations_image_id": "3458764580489710969"
       },
       {
         "context_accounts_image_id": "",
