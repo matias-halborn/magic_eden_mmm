@@ -15,7 +15,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "Signer",
-          "validations": ["address = CANCEL_AUTHORITY"]
+          "validations": [
+            "address = CANCEL_AUTHORITY"
+          ]
         },
         {
           "account_name": "owner",
@@ -623,7 +625,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = mpl_token_metadata::ID"]
+          "validations": [
+            "address = mpl_token_metadata::ID"
+          ]
         },
         {
           "account_name": "authorization_rules_program",
@@ -638,7 +642,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = MPL_TOKEN_AUTH_RULES"]
+          "validations": [
+            "address = MPL_TOKEN_AUTH_RULES"
+          ]
         },
         {
           "account_name": "instructions",
@@ -653,7 +659,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -949,7 +957,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = mpl_token_metadata::ID"]
+          "validations": [
+            "address = mpl_token_metadata::ID"
+          ]
         },
         {
           "account_name": "authorization_rules_program",
@@ -964,7 +974,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = MPL_TOKEN_AUTH_RULES"]
+          "validations": [
+            "address = MPL_TOKEN_AUTH_RULES"
+          ]
         },
         {
           "account_name": "instructions",
@@ -979,7 +991,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -1257,7 +1271,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = open_creator_protocol::id("]
+          "validations": [
+            "address = open_creator_protocol::id("
+          ]
         },
         {
           "account_name": "cmt_program",
@@ -1272,7 +1288,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = community_managed_token::id("]
+          "validations": [
+            "address = community_managed_token::id("
+          ]
         },
         {
           "account_name": "instructions",
@@ -1287,7 +1305,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -1583,7 +1603,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = open_creator_protocol::id("]
+          "validations": [
+            "address = open_creator_protocol::id("
+          ]
         },
         {
           "account_name": "cmt_program",
@@ -1598,7 +1620,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = community_managed_token::id("]
+          "validations": [
+            "address = community_managed_token::id("
+          ]
         },
         {
           "account_name": "instructions",
@@ -1613,7 +1637,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -2813,7 +2839,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = mpl_token_metadata::ID"]
+          "validations": [
+            "address = mpl_token_metadata::ID"
+          ]
         },
         {
           "account_name": "authorization_rules_program",
@@ -2828,7 +2856,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = MPL_TOKEN_AUTH_RULES"]
+          "validations": [
+            "address = MPL_TOKEN_AUTH_RULES"
+          ]
         },
         {
           "account_name": "authorization_rules",
@@ -2858,7 +2888,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -3202,7 +3234,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = mpl_token_metadata::ID"]
+          "validations": [
+            "address = mpl_token_metadata::ID"
+          ]
         },
         {
           "account_name": "authorization_rules_program",
@@ -3217,7 +3251,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = MPL_TOKEN_AUTH_RULES"]
+          "validations": [
+            "address = MPL_TOKEN_AUTH_RULES"
+          ]
         },
         {
           "account_name": "instructions",
@@ -3232,7 +3268,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -3576,7 +3614,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = open_creator_protocol::id("]
+          "validations": [
+            "address = open_creator_protocol::id("
+          ]
         },
         {
           "account_name": "cmt_program",
@@ -3591,7 +3631,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = community_managed_token::id("]
+          "validations": [
+            "address = community_managed_token::id("
+          ]
         },
         {
           "account_name": "instructions",
@@ -3606,7 +3648,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -3935,7 +3979,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = open_creator_protocol::id("]
+          "validations": [
+            "address = open_creator_protocol::id("
+          ]
         },
         {
           "account_name": "cmt_program",
@@ -3950,7 +3996,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = community_managed_token::id("]
+          "validations": [
+            "address = community_managed_token::id("
+          ]
         },
         {
           "account_name": "instructions",
@@ -3965,7 +4013,9 @@
           "rent_exemption_account": "",
           "seeds": [],
           "solana_account_type": "UncheckedAccount",
-          "validations": ["address = sysvar::instructions::id("]
+          "validations": [
+            "address = sysvar::instructions::id("
+          ]
         },
         {
           "account_name": "system_program",
@@ -4174,7 +4224,9 @@
             "pool.uuid.as_ref()"
           ],
           "solana_account_type": "ProgramStateAccount",
-          "validations": ["has_one = cosigner @ MMMErrorCode::InvalidCosigner"]
+          "validations": [
+            "has_one = cosigner @ MMMErrorCode::InvalidCosigner"
+          ]
         }
       ],
       "metadata_id": "xJJ6qWjXlEpSUDhQrGDxi8N69Hw3IE",
@@ -4622,21 +4674,27 @@
     },
     {
       "dependencies": [],
-      "external_dependencies": ["Err"],
+      "external_dependencies": [
+        "Err"
+      ],
       "function_metadata_id": "zOszbeVweKuG4V6l1KVk5qjf4R0uyn",
       "function_name": "assert_is_programmable",
       "metadata_id": "g5SvuNQjiUk2jR1T7hCCVjdmhyC8X3"
     },
     {
       "dependencies": [],
-      "external_dependencies": ["Err"],
+      "external_dependencies": [
+        "Err"
+      ],
       "function_metadata_id": "dAquqgENqPJUc7UbcXoSHYjFwKz2UB",
       "function_name": "assert_keys_equal",
       "metadata_id": "zla7oJ6qWGU3GnvjkDfpzS9ByRz0Jh"
     },
     {
       "dependencies": [],
-      "external_dependencies": ["Err"],
+      "external_dependencies": [
+        "Err"
+      ],
       "function_metadata_id": "CKiExEiJiLlbwlKNdGDmViIDSXYv8w",
       "function_name": "assert_owned_by",
       "metadata_id": "N90hLniPRGSFEC7HccjNmUQ7903Khk"
@@ -4662,7 +4720,10 @@
           "function_name": "valid"
         }
       ],
-      "external_dependencies": ["iter", "Err"],
+      "external_dependencies": [
+        "iter",
+        "Err"
+      ],
       "function_metadata_id": "yhDpkc1MtDWMdPdLjs0AMiz6PP9AYm",
       "function_name": "check_allowlists",
       "metadata_id": "6UsmNrHtk6NCkuktF74QuuxGvry6Zk"
@@ -4710,14 +4771,19 @@
     },
     {
       "dependencies": [],
-      "external_dependencies": ["Err", "Err"],
+      "external_dependencies": [
+        "Err",
+        "Err"
+      ],
       "function_metadata_id": "kOqJ0wFlJdZX1EZZ44PfxJptOsjx64",
       "function_name": "check_curve",
       "metadata_id": "K7XEC3U8r9REmPpVJxVOI65A3lXMay"
     },
     {
       "dependencies": [],
-      "external_dependencies": ["borrow"],
+      "external_dependencies": [
+        "borrow"
+      ],
       "function_metadata_id": "37cPoCHl3SHOsod3x7YGidjcuOPxPZ",
       "function_name": "check_master_edition",
       "metadata_id": "2zkSQ9pGoxFyZ0oJMhE5g1ATjNSdSU"
@@ -4945,7 +5011,9 @@
     },
     {
       "dependencies": [],
-      "external_dependencies": ["get_royalty_bp"],
+      "external_dependencies": [
+        "get_royalty_bp"
+      ],
       "function_metadata_id": "ElHgUDioiXazjZWWMwQAHhvqe8z8Gm",
       "function_name": "get_metadata_royalty_bp",
       "metadata_id": "ojWE57zHeJU5vP5aI8v8g2WLWmoVqU"
@@ -4970,7 +5038,12 @@
           "function_name": "get_lp_fee_bp"
         }
       ],
-      "external_dependencies": ["checked_mul", "ok_or", "checked_div", "ok_or"],
+      "external_dependencies": [
+        "checked_mul",
+        "ok_or",
+        "checked_div",
+        "ok_or"
+      ],
       "function_metadata_id": "pKLzuiMT1tdHkWcIoAk1xlFM7AQN7F",
       "function_name": "get_sol_lp_fee",
       "metadata_id": "0zvrdUu0sa5mAac7YTbtSY1UlfjmVH"
@@ -5048,7 +5121,12 @@
     },
     {
       "dependencies": [],
-      "external_dependencies": ["Err", "Err", "Err", "key"],
+      "external_dependencies": [
+        "Err",
+        "Err",
+        "Err",
+        "key"
+      ],
       "function_metadata_id": "j5yRPfLa5augoTlWXyJzHd2dFlVupp",
       "function_name": "handler",
       "metadata_id": "oVL9GMoqIeqg7ZehNnyraaEvP9CUdj"
@@ -5080,7 +5158,10 @@
           "function_name": "check_curve"
         }
       ],
-      "external_dependencies": ["key", "key"],
+      "external_dependencies": [
+        "key",
+        "key"
+      ],
       "function_metadata_id": "Y0PPRZ3dRq0FRKRAROk12tm6tObRoS",
       "function_name": "handler",
       "metadata_id": "cj44U2YENfEJJAKZQc1vA0gJIrRd9B"
@@ -5610,7 +5691,12 @@
           "function_name": "try_close_pool"
         }
       ],
-      "external_dependencies": ["key", "as_bytes", "as_ref", "lamports"],
+      "external_dependencies": [
+        "key",
+        "as_bytes",
+        "as_ref",
+        "lamports"
+      ],
       "function_metadata_id": "pu7WCx6B7OdVLsQGKg0IPVBtFxcGqP",
       "function_name": "handler",
       "metadata_id": "1yZQvxVig096ESlzC8YcZbVOFH7l1P"
@@ -6254,7 +6340,9 @@
     },
     {
       "dependencies": [],
-      "external_dependencies": ["try_to_vec"],
+      "external_dependencies": [
+        "try_to_vec"
+      ],
       "function_metadata_id": "RuX5cumWHR8cnXEAfupVwPCOAGKP2l",
       "function_name": "log_pool",
       "metadata_id": "2LmYChWiDk9C5ho490DRXSVbBPRtI6"
@@ -7510,7 +7598,10 @@
     },
     {
       "dependencies": [],
-      "external_dependencies": ["is_initialized", "Err"],
+      "external_dependencies": [
+        "is_initialized",
+        "Err"
+      ],
       "function_metadata_id": "b2lnWhuSZZLXwfBiNJTtSCqkfmdQEn",
       "function_name": "unpack_initialized",
       "metadata_id": "hmLxBbYxogHcfzopOf1U4cS0NpWhLA"
@@ -8052,15 +8143,28 @@
         "validations_image_id": "3458764580489710969"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764580494241869",
+        "entry_point_image_id": "3458764580494241650",
         "entry_point_name": "ocp_deposit_sell",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764580494241554",
+        "images_deployed": true,
         "metadata_id": "bgZv6k9a1yeY5F92zITl8YtRVcmbIu",
         "miro_frame_id": "3458764579678840412",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>owner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580494241448",
+            "user_figure_id": "3458764580494241470"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580494241486",
+            "user_figure_id": "3458764580494241509"
+          }
+        ],
+        "validations_image_id": "3458764580494241739"
       },
       {
         "context_accounts_image_id": "",
