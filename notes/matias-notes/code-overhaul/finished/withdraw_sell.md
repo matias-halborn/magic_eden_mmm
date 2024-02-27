@@ -1,46 +1,23 @@
 # State changes:
 
 - Updates `pool`[Pool]:
-	- `pool.spot_price`[u64]
-	- `pool.curve_type`[u8]
-	- `pool.curve_delta`[u64]
-	- `pool.reinvest_fulfill_buy`[bool]
-	- `pool.reinvest_fulfill_sell`[bool]
-	- `pool.expiry`[i64]
-	- `pool.lp_fee_bp`[u16]
-	- `pool.referral`[Pubkey]
-	- `pool.referral_bp`[u16, // deprecated]
-	- `pool.buyside_creator_royalty_bp`[u16]
 	- `pool.sellside_asset_amount`[u64]
-	- `pool.lp_fee_earned`[u64]
-	- `pool.owner`[Pubkey]
-	- `pool.cosigner`[Pubkey]
-	- `pool.uuid`[Pubkey, // randomly generated keypair]
-	- `pool.payment_mint`[Pubkey]
 	- `pool.buyside_payment_amount`[u64]
-	- `pool.shared_escrow_account`[Pubkey, // this points to the shared escrow account PDA (usually M2)]
-	- `pool.shared_escrow_count`[u64, // this means that how many times (count) the shared escrow account can be fulfilled, and it can be mutable]
 - Updates `sell_state`[SellState]:
-	- `sell_state.pool`[Pubkey]
-	- `sell_state.pool_owner`[Pubkey]
-	- `sell_state.asset_mint`[Pubkey]
 	- `sell_state.asset_amount`[u64]
 - Updates `buyside_sol_escrow_account`[UncheckedAccount]
-- Transfers `COMPLETE_WITH_AMOUNT` tokens from `sellside_escrow_token_account`[authority=COMPLETE_WITH_TOKEN_AUTHORITY] to `COMPLETE_WITH_DESTINATION_TOKEN_ACCOUNT`[authority=COMPLETE_WITH_TOKEN_AUTHORITY]
-- Delegates `COMPLETE_WITH_AMOUNT` tokens from `sellside_escrow_token_account`[authority=COMPLETE_WITH_TOKEN_AUTHORITY] to `COMPLETE_WITH_DESTINATION_TOKEN_ACCOUNT`[authority=COMPLETE_WITH_TOKEN_AUTHORITY]
-- `COMPLETE_WITH_THE_REST_OF_STATE_CHANGES`
+- Transfers `args.asset_amount` tokens from `sellside_escrow_token_account`[authority=pool] to `asset_token_account`[authority=owner]
 
 # Notes:
 
-- [ ] check validations:
-  - [ ] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/withdraw_sell.rs#L29)
-  - [ ] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/withdraw_sell.rs#L30)
-- COMPLETE_WITH_NOTES
+- [x] check validations:
+  - [x] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/withdraw_sell.rs#L29)
+  - [x] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/withdraw_sell.rs#L30)
 
 # Signers:
 
-- owner: COMPLETE_WITH_SIGNER_DESCRIPTION
-- cosigner: COMPLETE_WITH_SIGNER_DESCRIPTION
+- owner: owner fo the `pool`[Pool] account
+- cosigner: cosigner fo the `pool`[Pool] account
 
 # Handler function parameters:
 
@@ -131,5 +108,5 @@
 
 # Miro frame url:
 
-COMPLETE_WITH_MIRO_FRAME_URL
+https://miro.com/app/board/uXjVNrXUjBs=/?moveToWidget=3458764579678840226
             
