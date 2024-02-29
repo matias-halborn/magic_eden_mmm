@@ -8335,15 +8335,22 @@
         "validations_image_id": "3458764580784263492"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764580784879283",
+        "entry_point_image_id": "3458764580784878981",
         "entry_point_name": "close_if_balance_invalid",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764580784840070",
+        "images_deployed": true,
         "metadata_id": "CkZQrsbP4KCRA36kU9jT9MzI6FC4Yt",
         "miro_frame_id": "3458764579678840699",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>authority</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580784840008",
+            "user_figure_id": "3458764580784840030"
+          }
+        ],
+        "validations_image_id": "3458764580784879216"
       },
       {
         "context_accounts_image_id": "",
