@@ -22,19 +22,17 @@
 	- `pool.shared_escrow_count`[u64, // this means that how many times (count) the shared escrow account can be fulfilled, and it can be mutable]
 - Updates `owner`[UncheckedAccount]
 - Updates `buyside_sol_escrow_account`[UncheckedAccount]
-- `COMPLETE_WITH_THE_REST_OF_STATE_CHANGES`
 
 # Notes:
 
-- [ ] check validations:
-  - [ ] [address = CANCEL_AUTHORITY](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/close_if_balance_invalid.rs#L12)
-  - [ ] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/close_if_balance_invalid.rs#L20)
-  - [ ] [constraint = pool.payment_mint.eq(&Pubkey::default()) @ MMMErrorCode::InvalidPaymentMint](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/close_if_balance_invalid.rs#L21)
-- COMPLETE_WITH_NOTES
+- [x] check validations:
+  - [x] [address = CANCEL_AUTHORITY](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/close_if_balance_invalid.rs#L12)
+  - [x] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/close_if_balance_invalid.rs#L20)
+  - [x] [constraint = pool.payment_mint.eq(&Pubkey::default()) @ MMMErrorCode::InvalidPaymentMint](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/vanilla/close_if_balance_invalid.rs#L21)
 
 # Signers:
 
-- authority: COMPLETE_WITH_SIGNER_DESCRIPTION
+- authority: cancel authority
 
 # Handler function parameters:
 
@@ -85,5 +83,5 @@ NO_HANDLER_FUNCTION_PARAMETERS_DETECTED
 
 # Miro frame url:
 
-COMPLETE_WITH_MIRO_FRAME_URL
+https://miro.com/app/board/uXjVNrXUjBs=/?moveToWidget=3458764579678840699
             
