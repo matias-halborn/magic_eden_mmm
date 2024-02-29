@@ -8167,15 +8167,28 @@
         "validations_image_id": "3458764580494241739"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764580737969469",
+        "entry_point_image_id": "3458764580737969337",
         "entry_point_name": "sol_ocp_fulfill_buy",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764580737969150",
+        "images_deployed": true,
         "metadata_id": "AfCX804PHEf1cEIMVtGO5EGF3Ln8PA",
         "miro_frame_id": "3458764579678840467",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Not validated signer:<br> <strong>payer</strong>",
+            "signer_type": "NotValidated",
+            "sticky_note_id": "3458764580737969011",
+            "user_figure_id": "3458764580737969032"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580737969053",
+            "user_figure_id": "3458764580737969089"
+          }
+        ],
+        "validations_image_id": "3458764580737969403"
       },
       {
         "context_accounts_image_id": "",
