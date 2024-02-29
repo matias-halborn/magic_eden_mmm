@@ -8353,15 +8353,28 @@
         "validations_image_id": "3458764580784879216"
       },
       {
-        "context_accounts_image_id": "",
-        "entry_point_image_id": "",
+        "context_accounts_image_id": "3458764580785732464",
+        "entry_point_image_id": "3458764580785732358",
         "entry_point_name": "set_shared_escrow",
-        "handler_image_id": "",
-        "images_deployed": false,
+        "handler_image_id": "3458764580785732330",
+        "images_deployed": true,
         "metadata_id": "20wVAKtbAtnXSCRoze1H2iAPFZTpzS",
         "miro_frame_id": "3458764579678840716",
-        "signers": [],
-        "validations_image_id": ""
+        "signers": [
+          {
+            "signer_text": "Validated signer:<br> <strong>owner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580785732242",
+            "user_figure_id": "3458764580785732271"
+          },
+          {
+            "signer_text": "Validated signer:<br> <strong>cosigner</strong>",
+            "signer_type": "Validated",
+            "sticky_note_id": "3458764580785732291",
+            "user_figure_id": "3458764580785732306"
+          }
+        ],
+        "validations_image_id": "3458764580785732417"
       }
     ]
   },
