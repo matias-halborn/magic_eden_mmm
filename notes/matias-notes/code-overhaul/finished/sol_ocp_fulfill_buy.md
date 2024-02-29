@@ -1,55 +1,29 @@
 # State changes:
 
 - Updates `pool`[Pool]:
-	- `pool.spot_price`[u64]
-	- `pool.curve_type`[u8]
-	- `pool.curve_delta`[u64]
-	- `pool.reinvest_fulfill_buy`[bool]
-	- `pool.reinvest_fulfill_sell`[bool]
-	- `pool.expiry`[i64]
-	- `pool.lp_fee_bp`[u16]
-	- `pool.referral`[Pubkey]
-	- `pool.referral_bp`[u16, // deprecated]
-	- `pool.buyside_creator_royalty_bp`[u16]
 	- `pool.sellside_asset_amount`[u64]
 	- `pool.lp_fee_earned`[u64]
-	- `pool.owner`[Pubkey]
-	- `pool.cosigner`[Pubkey]
-	- `pool.uuid`[Pubkey, // randomly generated keypair]
-	- `pool.payment_mint`[Pubkey]
 	- `pool.buyside_payment_amount`[u64]
-	- `pool.shared_escrow_account`[Pubkey, // this points to the shared escrow account PDA (usually M2)]
-	- `pool.shared_escrow_count`[u64, // this means that how many times (count) the shared escrow account can be fulfilled, and it can be mutable]
-- Updates `owner`[UncheckedAccount]
-- Updates `referral`[UncheckedAccount]
-- Updates `buyside_sol_escrow_account`[UncheckedAccount]
-- Updates `sellside_escrow_token_account`[UncheckedAccount]
-- Updates `owner_token_account`[UncheckedAccount]
-- Updates `ocp_mint_state`[UncheckedAccount]
-- Transfers `COMPLETE_WITH_AMOUNT` tokens from `payer_asset_account`[authority=COMPLETE_WITH_TOKEN_AUTHORITY] to `COMPLETE_WITH_DESTINATION_TOKEN_ACCOUNT`[authority=COMPLETE_WITH_TOKEN_AUTHORITY]
-- Delegates `COMPLETE_WITH_AMOUNT` tokens from `payer_asset_account`[authority=COMPLETE_WITH_TOKEN_AUTHORITY] to `COMPLETE_WITH_DESTINATION_TOKEN_ACCOUNT`[authority=COMPLETE_WITH_TOKEN_AUTHORITY]
-- `COMPLETE_WITH_THE_REST_OF_STATE_CHANGES`
 
 # Notes:
 
 - [ ] check validations:
-  - [ ] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L46)
-  - [ ] [has_one = referral @ MMMErrorCode::InvalidReferral](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L47)
-  - [ ] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L48)
-  - [ ] [constraint = pool.payment_mint.eq(&Pubkey::default()) @ MMMErrorCode::InvalidPaymentMint](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L49)
+  - [x] [has_one = owner @ MMMErrorCode::InvalidOwner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L46)
+  - [x] [has_one = referral @ MMMErrorCode::InvalidReferral](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L47)
+  - [x] [has_one = cosigner @ MMMErrorCode::InvalidCosigner](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L48)
+  - [x] [constraint = pool.payment_mint.eq(&Pubkey::default()) @ MMMErrorCode::InvalidPaymentMint](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L49)
   - [ ] [constraint = pool.expiry == 0](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L50)
   - [ ] [constraint = asset_mint.supply == 1 && asset_mint.decimals == 0 @ MMMErrorCode::InvalidOcpAssetParams](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L73)
   - [ ] [constraint = payer_asset_account.amount == 1 @ MMMErrorCode::InvalidOcpAssetParams](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L81)
   - [ ] [constraint = args.asset_amount == 1 @ MMMErrorCode::InvalidOcpAssetParams](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L82)
-  - [ ] [address = open_creator_protocol::id(](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L114)
-  - [ ] [address = community_managed_token::id(](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L117)
-  - [ ] [address = sysvar::instructions::id(](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L120)
-- COMPLETE_WITH_NOTES
+  - [x] [address = open_creator_protocol::id(](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L114)
+  - [x] [address = community_managed_token::id(](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L117)
+  - [x] [address = sysvar::instructions::id(](https://github.com/magicoss/mmm/blob/3e15732061ad03256b2570b78ff8018ba74ce039/programs/mmm/src/instructions/ocp/sol_ocp_fulfill_buy.rs#L120)
 
 # Signers:
 
-- payer: COMPLETE_WITH_SIGNER_DESCRIPTION
-- cosigner: COMPLETE_WITH_SIGNER_DESCRIPTION
+- owner: owner fo the `pool`[Pool] account
+- cosigner: cosigner fo the `pool`[Pool] account
 
 # Handler function parameters:
 
@@ -207,5 +181,5 @@
 
 # Miro frame url:
 
-COMPLETE_WITH_MIRO_FRAME_URL
+https://miro.com/app/board/uXjVNrXUjBs=/?moveToWidget=3458764579678840467
             
